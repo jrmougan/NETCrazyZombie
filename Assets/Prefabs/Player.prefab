@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 1724272368731631912}
   - component: {fileID: 4653150573600102542}
   - component: {fileID: 6920551742808641112}
+  - component: {fileID: 56512146954729888}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -206,6 +207,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   NetworkTransformExpanded: 0
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
   AuthorityMode: 0
   TickSyncChildren: 0
   UseUnreliableDeltas: 0
@@ -241,10 +252,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  health:
-    m_InternalValue: 0
-  spawns:
-    m_InternalValue: 0
   username:
     m_InternalValue:
       utf8LengthInBytes: 0
@@ -382,6 +389,8 @@ MonoBehaviour:
         byte0123: 0
         byte0124: 0
         byte0125: 0
+  spawns:
+    m_InternalValue: 0
   m_HealthBarImage: {fileID: 6805129138928195005}
   m_UsernameLabel: {fileID: 1264818195039521092}
   txtHealth: {fileID: 8323256759470376865}
@@ -444,6 +453,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   playerUI: {fileID: 6269732253473814909}
+--- !u!114 &56512146954729888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968261313621213430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c187584374fca4cabd705f9b14eb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  CurrentHealth:
+    m_InternalValue: 100
 --- !u!1 &7889315627308119846
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +750,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   NetworkTransformExpanded: 0
+  AutoOwnerAuthorityTickOffset: 1
+  PositionInterpolationType: 0
+  RotationInterpolationType: 0
+  ScaleInterpolationType: 0
+  PositionLerpSmoothing: 1
+  PositionMaxInterpolationTime: 0.1
+  RotationLerpSmoothing: 1
+  RotationMaxInterpolationTime: 0.1
+  ScaleLerpSmoothing: 1
+  ScaleMaxInterpolationTime: 0.1
   AuthorityMode: 0
   TickSyncChildren: 0
   UseUnreliableDeltas: 0
