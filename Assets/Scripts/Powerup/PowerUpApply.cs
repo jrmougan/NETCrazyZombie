@@ -7,15 +7,18 @@ public class PowerUpApply : NetworkBehaviour
 
     [SerializeField] AudioClip clip;
 
+
     void OnTriggerEnter(Collider other)
     {
-        if(IsServer){
+        var health = other.GetComponent<Health>();
+        if (IsServer)
+        {
             if (other.CompareTag("Player"))
             {
-                other.gameObject.SendMessage("ApplyDamage", -POWER);
+                health.ApplyDamageRpc(-POWER);
 
                 AudioSource.PlayClipAtPoint(clip, transform.position);
-                
+
                 GetComponent<NetworkObject>().Despawn();
                 Destroy(gameObject);
             }
