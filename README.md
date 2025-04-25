@@ -12,6 +12,8 @@
 
 - Separar el sistema de salud del jugador de forma similar a NETTanks.
 
+  -- Desacopla sistema de saludo del PlayerManager --
+
 - Separar el sistema del display de salud de forma similar a NETTanks.
 
 - Implementar un sistema de respawn que funcione correctamente.
