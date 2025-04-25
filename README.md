@@ -25,3 +25,4 @@
 ### Bugs detectados:
 
 - Los zombies se mueven erráticamente en ocasiones cuando chocan con las escaleras y no pueden alcanzar al jugador.
+  -- Ajusta rigidbody enemigos para evitar comportamientos de físicas inesperados --
