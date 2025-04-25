@@ -6,10 +6,12 @@ public class BulletHit : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        // Instanciamos el efecto de impacto
+        Debug.Log("Colision con: " + collision.gameObject.name);
+
         Instantiate(particle, transform.position, Quaternion.identity);
-        
-        // Destruimos el proyectil
-        gameObject.SetActive(false);
+
+        Destroy(gameObject);
+
+
     }
 }

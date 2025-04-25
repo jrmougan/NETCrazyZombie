@@ -3,9 +3,12 @@
 ### Mejoras sugeridas:
 
 - Crear el sistema de proyectiles de igual forma que se hace en NETTanks.
+
   - Prefab base
   - Prefab cliente
   - Prefab servidor
+
+    -- Creado sistema de disparo similar a Nettanks, spawneando balas desde el arma con cun spawnpoint y un prefab cliente + prefab servidor --
 
 - Separar el sistema de salud del jugador de forma similar a NETTanks.
 
